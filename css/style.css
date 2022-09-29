@@ -158,10 +158,23 @@ a {
 
 .main-navigation .link {
   color: var(--secondary-text-color);
+  position: relative;
 }
 
 .link.active {
   color: var(--main-decor-color);
+}
+
+.site-nav .link.active::after {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: 0;
+
+  height: 4px;
+  width: 100%;
+
+  background-color: var(--main-decor-color);
 }
 
 .header-contact-us .link {
