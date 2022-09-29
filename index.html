@@ -60,7 +60,9 @@
       <!-- Hero -->
       <section class="hero">
         <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-        <button class="btn make-order" type="button">Замовити послугу</button>
+        <button class="btn make-order" type="button" data-modal-open>
+          Замовити послугу
+        </button>
       </section>
       <!-- Advantages  -->
       <section class="section">
@@ -126,28 +128,37 @@
           <h2 class="section-title">Чим ми займаємося</h2>
           <ul class="occupation-list list">
             <li class="occupation-item">
-              <img
-                src="images/box_1.jpg"
-                alt="розробка продукту"
-                width="370"
-                height="295"
-              />
+              <div class="occupation-thumb">
+                <img
+                  src="images/box_1.jpg"
+                  alt="розробка продукту"
+                  width="370"
+                  height="295"
+                />
+                <h3 class="occupation-title">Десктопні додатки</h3>
+              </div>
             </li>
             <li class="occupation-item">
-              <img
-                src="images/box_2.jpg"
-                alt="мобільні рішення"
-                width="370"
-                height="295"
-              />
+              <div class="occupation-thumb">
+                <img
+                  src="images/box_2.jpg"
+                  alt="мобільні рішення"
+                  width="370"
+                  height="295"
+                />
+                <h3 class="occupation-title">Мобільні додатки</h3>
+              </div>
             </li>
             <li class="occupation-item">
-              <img
-                src="images/box_3.jpg"
-                alt="дизайн"
-                width="370"
-                height="295"
-              />
+              <div class="occupation-thumb">
+                <img
+                  src="images/box_3.jpg"
+                  alt="дизайн"
+                  width="370"
+                  height="295"
+                />
+                <h3 class="occupation-title">Дизайнерські рішення</h3>
+              </div>
             </li>
           </ul>
         </div>
@@ -511,5 +522,16 @@
         </div>
       </div>
     </footer>
+
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="close-btn" data-modal-close>
+          <svg width="11" height="11" class="icon-close">
+            <use href="./images/sprite_optimized_new.svg#icon-close"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
   </body>
+  <script src="./js/modal.js"></script>
 </html>
