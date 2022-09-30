@@ -471,7 +471,7 @@ a {
 }
 
 .team-card .social-link {
-  transition: color var(--transition-duration) var(--cubic-bezier), border-color var(--transition-duration) var(--cubic-bezier);
+  transition: color var(--transition-duration) var(--cubic-bezier), background-color var(--transition-duration) var(--cubic-bezier);
 }
 
 .social-link .icon {
